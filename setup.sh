@@ -25,3 +25,6 @@ ln -sf $PWD/configs/vim ~/.vimrc
 # Git configuration.
 ln -sf $PWD/configs/git ~/.gitconfig
 ln -sf $PWD/configs/git_ignore ~/.gitignore
+
+# Miscellaneous configuration.
+ln -sf $PWD/configs/user_dirs ~/.config/user-dirs.dirs
