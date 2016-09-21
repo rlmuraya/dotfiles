@@ -1,3 +1,9 @@
+# Bash profile (login shells).
+ln -sf $PWD/configs/bash_login ~/.bash_profile
+
+# Bash configuration (non-login shells).
+ln -sf $PWD/configs/bash ~/.bashrc
+
 # i3 configuration.
 mkdir -p ~/.i3
 ln -sf $PWD/configs/i3 ~/.i3/config
