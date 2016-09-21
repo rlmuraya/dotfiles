@@ -10,7 +10,7 @@ ln -sf $PWD/configs/i3 ~/.i3/config
 
 # Terminal configuration.
 mkdir -p ~/.config/xfce4/terminal
-ln -sf $PWD/config/terminal ~/.config/xfce4/terminal/terminalrc
+ln -sf $PWD/configs/terminal ~/.config/xfce4/terminal/terminalrc
 
 # Vim configuration.
 mkdir -p ~/.vim/bundle/
