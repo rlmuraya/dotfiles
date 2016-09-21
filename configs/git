@@ -7,6 +7,9 @@ diff = auto
 status = auto
 branch = auto
 
+[core]
+excludesfile = /home/rlmuraya/.gitignore
+
 [alias]
 a = add --all
 amend = commit --amend

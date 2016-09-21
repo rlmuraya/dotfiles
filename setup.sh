@@ -24,3 +24,4 @@ ln -sf $PWD/configs/vim ~/.vimrc
 
 # Git configuration.
 ln -sf $PWD/configs/git ~/.gitconfig
+ln -sf $PWD/configs/git_ignore ~/.gitignore
