@@ -88,3 +88,4 @@ alias vim='gvim -v'  # to fix clipboard support
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export MANPAGER=less
