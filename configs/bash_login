@@ -11,8 +11,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Ensure key is available.
+# Ensure SSH key is available.
 ssh-add ~/.ssh/id_rsa
+
+# Make sure Dropbox starts.
+dropbox start
 
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
