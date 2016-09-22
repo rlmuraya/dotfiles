@@ -14,9 +14,6 @@ fi
 # Ensure SSH key is available.
 ssh-add ~/.ssh/id_rsa
 
-# Make sure Dropbox starts.
-dropbox start
-
 # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/.rvm/bin"
 

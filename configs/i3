@@ -149,8 +149,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle  # mute 
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
-# Wireless
-exec --no-startup-id nm-applet
-
-# Desktop background
-exec --no-startup-id xsetroot -solid "#333333"
+# Auto-start applications.
+exec --no-startup-id nm-applet  # wireless network manager
+exec --no-startup-id dropbox start -i  # Dropbox
+exec --no-startup-id xsetroot -solid "#333333"  # desktop background
