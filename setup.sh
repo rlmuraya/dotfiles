@@ -8,6 +8,9 @@ ln -sf $PWD/configs/bash ~/.bashrc
 mkdir -p ~/.i3
 ln -sf $PWD/configs/i3 ~/.i3/config
 
+# Better font rendering
+ln -sf $PWD/configs/Xresources ~/.Xresources
+
 # Terminal configuration.
 mkdir -p ~/.config/xfce4/terminal
 ln -sf $PWD/configs/terminal ~/.config/xfce4/terminal/terminalrc
