@@ -127,6 +127,9 @@ mode "programs" {
     # keepass2
     bindsym k exec keepass2 ; mode "default"
 
+    # file manager
+    bindsym f exec thunar ; mode "default"
+
     # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
