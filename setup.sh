@@ -5,8 +5,8 @@ ln -sf $PWD/configs/bash_login ~/.bash_profile
 ln -sf $PWD/configs/bash ~/.bashrc
 
 # i3 configuration.
-mkdir -p ~/.i3
-ln -sf $PWD/configs/i3 ~/.i3/config
+mkdir -p ~/.config/i3
+ln -sf $PWD/configs/i3 ~/.config/i3/config
 
 # Better font rendering
 ln -sf $PWD/configs/Xresources ~/.Xresources
