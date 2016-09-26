@@ -93,7 +93,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # lock
-bindsym $mod+Control+l exec i3lock
+bindsym $mod+Control+l exec i3lock -c 333333
 # logout
 bindsym $mod+Shift+e exit
 
