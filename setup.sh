@@ -8,6 +8,10 @@ ln -sf $PWD/configs/bash ~/.bashrc
 mkdir -p ~/.config/i3
 ln -sf $PWD/configs/i3 ~/.config/i3/config
 
+# i3 status bar configuration.
+mkdir -p ~/.config/i3status
+ln -sf $PWD/configs/i3status ~/.config/i3status/config
+
 # Better font rendering
 ln -sf $PWD/configs/Xresources ~/.Xresources
 

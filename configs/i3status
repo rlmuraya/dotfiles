@@ -1,0 +1,27 @@
+general {
+    interval = 2
+    output_format = "i3bar"
+
+    colors = true
+    color_good = "#73d216"
+    color_degraded = "#f27835"
+    color_bad = "#fc4138"
+}
+
+order += "battery all"
+order += "volume master"
+order += "tztime local"
+
+battery 0 {
+    format = "%status %percentage %remaining"
+}
+
+volume master {
+    device = "pulse"
+    format = " %volume "
+    format_muted = " 0%% "
+}
+
+tztime local {
+    format = " %Y-%m-%d %H:%M:%S "
+}
