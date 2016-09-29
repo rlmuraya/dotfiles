@@ -138,8 +138,14 @@ mode "programs" {
 bindsym $mod+y mode "programs"
 
 mode "monitors" {
-    # Monitor config - work
-    bindsym t exec xrandr --output HDMI1 --right-of LVDS1 --auto ; mode "default"
+    # Monitor config - just laptop
+    bindsym o exec xrandr --output HDMI1 --off --output VGA1 --off; mode "default"
+
+    # Monitor config - extra monitor on HDMI to the right
+    bindsym h exec xrandr --output HDMI1 --right-of LVDS1 --auto ; mode "default"
+
+    # Monitor config - extra monitor on VGA to the right
+    bindsym v exec xrandr --output VGA1 --right-of LVDS1 --auto ; mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
