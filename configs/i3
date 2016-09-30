@@ -4,7 +4,7 @@
 set $mod Mod1
 
 # Font for window titles.
-font pango:Droid Sans Mono 10
+font pango:Droid Sans Mono 12
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
