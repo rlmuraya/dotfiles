@@ -1,0 +1,3 @@
+# Disable Caps Lock and remap as Esc key.
+clear Lock
+keysym Caps_Lock = Escape
