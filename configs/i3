@@ -1,6 +1,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Super as mod key
+set $alt Mod1
 set $sup Mod4
 
 # Font for window titles.
@@ -93,7 +94,7 @@ bindsym $sup+Shift+c reload
 bindsym $sup+Shift+r restart
 
 # lock
-bindsym $sup+Control+l exec i3lock -c 333333
+bindsym $alt+Control+l exec i3lock -c 333333
 # logout
 bindsym $sup+Shift+e exit
 
