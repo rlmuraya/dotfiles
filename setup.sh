@@ -19,8 +19,8 @@ ln -sf $PWD/configs/xmodmap ~/.Xmodmap
 ln -sf $PWD/configs/Xresources ~/.Xresources
 
 # Terminal configuration.
-mkdir -p ~/.config/xfce4/terminal
-ln -sf $PWD/configs/terminal ~/.config/xfce4/terminal/terminalrc
+mkdir -p ~/.config/tilda
+ln -sf $PWD/configs/terminal ~/.config/tilda/config_0
 
 # Vim configuration.
 mkdir -p ~/.vim/bundle/
