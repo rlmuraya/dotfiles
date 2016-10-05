@@ -11,7 +11,7 @@ font pango:Droid Sans Mono 12
 floating_modifier $sup
 
 # start a terminal
-bindsym $sup+Return exec tilda
+bindsym $sup+Return exec sakura
 
 # kill focused window
 bindsym $sup+Shift+q kill

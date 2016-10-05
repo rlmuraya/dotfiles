@@ -19,8 +19,8 @@ ln -sf $PWD/configs/xmodmap ~/.Xmodmap
 ln -sf $PWD/configs/Xresources ~/.Xresources
 
 # Terminal configuration.
-mkdir -p ~/.config/tilda
-ln -sf $PWD/configs/terminal ~/.config/tilda/config_0
+mkdir -p ~/.config/sakura
+ln -sf $PWD/configs/terminal ~/.config/sakura/sakura.conf
 
 # Vim configuration.
 mkdir -p ~/.vim/bundle/
