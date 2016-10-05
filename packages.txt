@@ -1,0 +1,8 @@
+# TODO: Next time that I reinstall, create a script to install packages automatically.
+i3wm
+i3lock
+i3status
+xautolock
+sakura
+git
+vim
