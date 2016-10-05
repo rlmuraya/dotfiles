@@ -93,10 +93,9 @@ bindsym $sup+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $sup+Shift+r restart
 
-# lock
-bindsym $alt+Control+l exec i3lock -c 333333
-# logout
-bindsym $sup+Shift+e exit
+exec xautolock -time 1 -locker 'i3lock -c 333333' & # lock screen after 1 min of inactivity
+bindsym $alt+Control+l exec xautolock -locknow      # lock screen now
+bindsym $sup+Shift+e exit                           # log out
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
