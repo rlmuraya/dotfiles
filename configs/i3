@@ -93,7 +93,13 @@ bindsym $sup+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $sup+Shift+r restart
 
-exec xautolock -time 1 -locker 'i3lock -c 333333' & # lock screen after 1 min of inactivity
+
+exec xset s blank           # use blank screen for screensaver
+exec xset s noexpose        # don't expose desktop behind screensaver
+exec xset s 60              # go to screensaver after 1m of inactivity
+
+# Turn off display & lock after 2m of inactivity.
+exec xautolock -time 2 -locker 'xset dpms force suspend && i3lock -c 333333'
 bindsym $alt+Control+l exec xautolock -locknow      # lock screen now
 bindsym $sup+Shift+e exit                           # log out
 

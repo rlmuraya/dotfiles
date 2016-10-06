@@ -3,6 +3,7 @@ i3wm
 i3lock
 i3status
 xautolock
+xset
 sakura
 git
 vim
