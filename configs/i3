@@ -127,9 +127,9 @@ mode "programs" {
     # Chrome - Personal
     bindsym m exec google-chrome --profile-directory="Default" ; mode "default"
     # Chrome - Work
-    bindsym t exec google-chrome --profile-directory="Profile 3" ; mode "default"
+    bindsym t exec google-chrome --profile-directory="Profile 1" ; mode "default"
     # Chrome - Grammy
-    bindsym g exec google-chrome --profile-directory="Profile 4" ; mode "default"
+    bindsym g exec google-chrome --profile-directory="Profile 2" ; mode "default"
     # keepass2
     bindsym k exec keepass2 ; mode "default"
 
