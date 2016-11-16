@@ -7,6 +7,9 @@ ln -sf $PWD/configs/bash_logout ~/.bash_logout
 # Bash configuration (non-login shells).
 ln -sf $PWD/configs/bash ~/.bashrc
 
+mkdir -p ~/.ssh
+ln -sf $PWD/configs/ssh ~/.ssh/config
+
 # i3 configuration.
 mkdir -p ~/.config/i3
 ln -sf $PWD/configs/i3 ~/.config/i3/config

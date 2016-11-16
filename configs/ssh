@@ -1,0 +1,6 @@
+Host *
+    UseRoaming no
+
+Host deploy.transloc.com
+    User rmuraya
+    ForwardAgent yes
