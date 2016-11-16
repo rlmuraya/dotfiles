@@ -1,6 +1,9 @@
 # Bash profile (login shells).
 ln -sf $PWD/configs/bash_login ~/.bash_profile
 
+# Bash profile (logout).
+ln -sf $PWD/configs/bash_logout ~/.bash_logout
+
 # Bash configuration (non-login shells).
 ln -sf $PWD/configs/bash ~/.bashrc
 
