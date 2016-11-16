@@ -144,8 +144,8 @@ mode "programs" {
 bindsym $sup+y mode "programs"
 
 mode "monitors" {
-    # Monitor config - just laptop
-    bindsym o exec xrandr --output HDMI1 --off --output VGA1 --off; mode "default"
+    # Monitor config - just Dell laptop
+    bindsym d exec xrandr --output HDMI1 --off --output VGA1 --off; mode "default"
 
     # Monitor config - extra monitor on HDMI to the right
     bindsym h exec xrandr --output HDMI1 --right-of LVDS1 --auto ; mode "default"
@@ -165,10 +165,18 @@ bar {
     output LVDS1
     status_command i3status
     tray_output LVDS1
-    # separator_symbol ":"
+}
+bar {
+    output eDP1
+    status_command i3status
+    tray_output eDP1
 }
 bar {
     output HDMI1
+    tray_output none
+}
+bar {
+    output DP2-1
     tray_output none
 }
 bar {
