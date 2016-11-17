@@ -82,9 +82,16 @@ fi
 
 ### Start custom config.
 
+ssh-add ~/.ssh/id_rsa
+
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+export PATH="$PATH:/usr/local/go/bin"
+
 source /usr/local/bin/virtualenvwrapper.sh
 
-alias vim='gvim -v'  # to fix clipboard support
+alias vim='gvim -v'  # fix clipboard support
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
