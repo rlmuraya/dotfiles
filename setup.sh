@@ -18,6 +18,9 @@ ln -sf $PWD/configs/i3 ~/.config/i3/config
 mkdir -p ~/.config/i3status
 ln -sf $PWD/configs/i3status ~/.config/i3status/config
 
+# xscreensaver configuration
+ln -sf $PWD/configs/xscreensaver ~/.xscreensaver
+
 # xmodmap configuration.
 ln -sf $PWD/configs/xmodmap ~/.Xmodmap
 
