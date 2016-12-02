@@ -80,16 +80,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
-### Start custom config.
+# ========== Start custom config. ========== #
 
 ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
 
-export PATH="$PATH:$HOME/.rvm/bin"
+[[ -d "$HOME/.rvm/bin" ]] && export PATH="$PATH:$HOME/.rvm/bin"
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-export PATH="$PATH:/usr/local/go/bin"
+[[ -d "/usr/local/go/bin" ]] && export PATH="$PATH:/usr/local/go/bin"
 
-source /usr/local/bin/virtualenvwrapper.sh
+[[ -f "/usr/local/bin/virtualenvwrapper.sh" ]] && source /usr/local/bin/virtualenvwrapper.sh
 
 alias vim='gvim -v'  # fix clipboard support
 
