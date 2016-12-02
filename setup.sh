@@ -24,9 +24,6 @@ ln -sf $PWD/configs/xscreensaver ~/.xscreensaver
 # xmodmap configuration.
 ln -sf $PWD/configs/xmodmap ~/.Xmodmap
 
-# Better font rendering
-ln -sf $PWD/configs/xresources ~/.Xresources
-
 # Terminal configuration.
 mkdir -p ~/.config/sakura
 ln -sf $PWD/configs/terminal ~/.config/sakura/sakura.conf
