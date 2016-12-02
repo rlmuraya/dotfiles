@@ -22,7 +22,7 @@ ln -sf $PWD/configs/i3status ~/.config/i3status/config
 ln -sf $PWD/configs/xmodmap ~/.Xmodmap
 
 # Better font rendering
-ln -sf $PWD/configs/Xresources ~/.Xresources
+ln -sf $PWD/configs/xresources ~/.Xresources
 
 # Terminal configuration.
 mkdir -p ~/.config/sakura
