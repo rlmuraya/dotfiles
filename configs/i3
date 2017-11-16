@@ -12,6 +12,7 @@ floating_modifier $sup
 
 # start a terminal
 bindsym $sup+Return exec sakura
+bindsym $sup+Shift+Return exec sakura -d ~/projects/transloc/
 
 # kill focused window
 bindsym $sup+Shift+q kill
