@@ -35,3 +35,6 @@ sl = stash list
 ss = stash show
 ssp = stash show -p
 undo = reset --soft HEAD^
+
+[rebase]
+autoStash = true
