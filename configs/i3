@@ -180,6 +180,10 @@ bar {
     tray_output none
 }
 bar {
+    output DP1
+    tray_output none
+}
+bar {
     output VGA1
     tray_output none
 }
