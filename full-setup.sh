@@ -1,11 +1,12 @@
 sudo apt-add-repository ppa:no1wantdthisname/ppa
+sudo apt-add-repository ppa:phoerious/keepassxc
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install \
     fontconfig-infinality \
     git \
     i3 \
-    keepass2 \
+    keepassxc \
     libgeos-dev \
     libmysqlclient-dev \
     mysql-server \
