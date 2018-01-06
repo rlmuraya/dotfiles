@@ -132,7 +132,7 @@ mode "programs" {
     # Chrome - Grammy
     bindsym g exec google-chrome --profile-directory="Profile 2" ; mode "default"
     # keepass
-    bindsym k exec keepassxc ; mode "default"
+    bindsym k exec mono /opt/keepass/KeePass.exe ; mode "default"
 
     # file manager
     bindsym f exec thunar ; mode "default"

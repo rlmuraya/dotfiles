@@ -9,6 +9,7 @@ sudo apt-get install \
     keepassxc \
     libgeos-dev \
     libmysqlclient-dev \
+    mono-devel \
     mysql-server \
     python-dev \
     python-pip \
