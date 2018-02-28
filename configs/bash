@@ -86,9 +86,7 @@ ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
 
 [[ -d "$HOME/.drivers" ]] && export PATH="$PATH:$HOME/.drivers"
 
-[[ -d "$HOME/.rbenv/bin" ]] && export PATH="$PATH:$HOME/.rbenv/bin"
-
-[[ -v "rbenv" ]] && eval "$(rbenv init -)"
+eval "$(rbenv init -)"
 
 [[ -d "/usr/local/go/bin" ]] && export PATH="$PATH:/usr/local/go/bin"
 
@@ -114,8 +112,6 @@ fi
 source <(kubectl completion bash)
 source <(npm completion)
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 # Workaround for https://bugs.launchpad.net/ubuntu/+source/at-spi2-core/+bug/1193236
 export NO_AT_BRIDGE=1
