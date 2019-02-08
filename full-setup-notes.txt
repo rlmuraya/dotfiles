@@ -1,0 +1,32 @@
+rmdir ~/Documents
+rmdir ~/Downloads
+rmdir ~/Music
+rmdir ~/Pictures
+rmdir ~/Public
+rmdir ~/Templates
+rmdir ~/Videos
+rm ~/examples.desktop
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install \
+    curl \
+    git \
+    i3 \
+    nautilus-dropbox \
+    sakura \
+    thunar \
+    xautolock
+sudo pip install virtualenvwrapper
+
+# Add mono
+# Download Keepass to /opt/keepass
+# Download Dropbox and configure
+
+mkdir ~/projects
+cd ~/projects
+git clone https://github.com/rlmuraya/dotfiles.git
+cd dotfiles
+./setup.sh
+
+# Restart & login to i3
