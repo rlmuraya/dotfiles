@@ -146,7 +146,7 @@ bindsym $sup+y mode "programs"
 bar {
     output eDP-1
     status_command i3status
-    tray_output eDP1
+    tray_output eDP-1
 }
 bar {
     output HDMI-1
