@@ -109,3 +109,5 @@ source <(npm completion)
 
 # Workaround for https://bugs.launchpad.net/ubuntu/+source/at-spi2-core/+bug/1193236
 export NO_AT_BRIDGE=1
+
+alias ls='ls -I "*.pyc" -I "__pycache__"'
