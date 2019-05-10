@@ -128,12 +128,18 @@ mode "resize" {
 bindsym $sup+r mode "resize"
 
 mode "programs" {
-    # Chrome - Personal
+    # Chrome default
     bindsym t exec google-chrome --profile-directory="Default" ; mode "default"
+    # Chrome alternate
+    bindsym m exec google-chrome --profile-directory="Profile 1" ; mode "default"
+    # Chrome alternate 2
+    bindsym g exec google-chrome --profile-directory="Profile 2" ; mode "default"
     # Keepass
     bindsym k exec mono /opt/keepass/KeePass.exe ; mode "default"
     # File manager
     bindsym f exec thunar ; mode "default"
+    # Postman
+    bindsym p exec /opt/postman/Postman ; mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
