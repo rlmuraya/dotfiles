@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-syntastic/syntastic'
 
@@ -59,17 +60,12 @@ set smartcase                       "Ignore case if search pattern is in
                                     " lowercase (case-sensitive otherwise).
 
 "Indentation settings.
-set smartindent                     "Use autoindentation.
-set tabstop=4
-set shiftwidth=4                    "Use 4 spaces instead of a tab.
 set pastetoggle=<F2>                "Toggle to keep existing indentation in a
                                     " paste.
 
 "Whitespace settings.
-set expandtab                       "Replace tabs with spaces.
 set listchars=tab:→\ ,trail:·,nbsp:·
 set list                            "Show hidden characters.
-autocmd BufWritePre * :%s/\s\+$//e  "Trim trailing whitespace for all files.
 
 "Set warning column at 80 chars, and use different background past 100 chars.
 let &colorcolumn="80,".join(range(100,999),",")

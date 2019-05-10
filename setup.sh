@@ -42,5 +42,8 @@ ln -sf $PWD/configs/vim ~/.vimrc
 ln -sf $PWD/configs/git ~/.gitconfig
 ln -sf $PWD/configs/git_ignore ~/.gitignore
 
+# Editor config.
+ln -sf $PWD/configs/editor_config ~/.editorconfig
+
 # Miscellaneous configuration.
 ln -sf $PWD/configs/user_dirs ~/.config/user-dirs.dirs
