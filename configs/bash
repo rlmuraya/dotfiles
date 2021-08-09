@@ -96,3 +96,6 @@ export MANPAGER=less
 export NO_AT_BRIDGE=1
 
 alias ls='ls -I "*.pyc" -I "__pycache__"'
+
+alias monitors-on='xrandr --output HDMI-2 --auto --output HDMI-1 --right-of HDMI-2 --auto --output eDP-1 --off'
+alias monitors-off='xrandr --output HDMI-2 --off --output HDMI-1 --off --output eDP-1 --auto'
