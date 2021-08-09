@@ -15,7 +15,7 @@ floating_modifier $sup
 
 # start a terminal
 bindsym $sup+Return exec sakura
-bindsym $sup+Shift+Return exec sakura -d ~/projects/transloc/
+bindsym $sup+Shift+Return exec sakura
 
 # kill focused window
 bindsym $sup+Shift+q kill
@@ -100,10 +100,10 @@ bindsym $sup+Shift+r restart
 
 exec xset s blank           # use blank screen for screensaver
 exec xset s noexpose        # don't expose desktop behind screensaver
-exec xset s 60              # go to screensaver after 1m of inactivity
+exec xset s 600             # go to screensaver after 10m of inactivity
 
 # Turn off display & lock after 2m of inactivity.
-exec xautolock -time 2 -locker 'xset dpms force suspend && i3lock -c 333333'
+# exec xautolock -time 2 -locker 'xset dpms force suspend && i3lock -c 333333'
 bindsym $alt+Control+l exec xautolock -locknow      # lock screen now
 bindsym $sup+Shift+e exit                           # log out
 
@@ -129,17 +129,13 @@ bindsym $sup+r mode "resize"
 
 mode "programs" {
     # Chrome default
-    bindsym t exec google-chrome --profile-directory="Default" ; mode "default"
-    # Chrome alternate
-    bindsym m exec google-chrome --profile-directory="Profile 1" ; mode "default"
+    bindsym m exec google-chrome --profile-directory="Default" ; mode "default"
     # Chrome alternate 2
-    bindsym g exec google-chrome --profile-directory="Profile 2" ; mode "default"
+    bindsym g exec google-chrome --profile-directory="Profile 1" ; mode "default"
     # Keepass
     bindsym k exec mono /opt/keepass/KeePass.exe ; mode "default"
     # File manager
     bindsym f exec thunar ; mode "default"
-    # Postman
-    bindsym p exec /opt/postman/Postman ; mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -159,12 +155,9 @@ bar {
     tray_output none
 }
 bar {
-    output DP-2-1
-    tray_output none
-}
-bar {
-    output DP-1
-    tray_output none
+    output HDMI-2
+    status_command i3status
+    tray_output HDMI-2
 }
 
 # Pulse Audio controls
